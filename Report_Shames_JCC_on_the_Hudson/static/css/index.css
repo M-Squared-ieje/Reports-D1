@@ -460,16 +460,12 @@ body {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(44, 144, 196, 0.3);
-}
-
-.footer-locations {
+}.footer-locations {
     color: #6B7280;
     font-size: 0.95em;
     margin-bottom: 10px;
     font-weight: 500;
-}
-
-.footer-contact-label {
+}.footer-contact-label {
     color: #2c3e50;
     font-weight: 800;
     font-size: 0.85em;
