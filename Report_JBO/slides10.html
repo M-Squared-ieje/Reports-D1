@@ -11,9 +11,9 @@
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 <script>
     // Chart data split by consensus level
-    const consensusHighData = [{"consensus": "High (\u2265.70)", "high": 80.0, "low": 5.0, "medium": 15.0, "name": "Jewish Community", "rwg": 0.711842105263158}];
-    const consensusMediumData = [{"consensus": "Medium (.50\u2013.69)", "high": 90.0, "low": 5.0, "medium": 5.0, "name": "Rituals and Holidays", "rwg": 0.669736842105263}, {"consensus": "Medium (.50\u2013.69)", "high": 50.0, "low": 5.0, "medium": 45.0, "name": "Israel and its People", "rwg": 0.663157894736842}, {"consensus": "Medium (.50\u2013.69)", "high": 80.0, "low": 5.0, "medium": 15.0, "name": "Jewish History, Memory, and Tradition", "rwg": 0.65921052631579}, {"consensus": "Medium (.50\u2013.69)", "high": 80.0, "low": 5.0, "medium": 15.0, "name": "Issues Facing Contemporary Jewry", "rwg": 0.636842105263158}, {"consensus": "Medium (.50\u2013.69)", "high": 90.0, "low": 10.0, "medium": 0, "name": "Hebrew and Jewish Terminology", "rwg": 0.617105263157895}, {"consensus": "Medium (.50\u2013.69)", "high": 60.0, "low": 15.0, "medium": 25.0, "name": "Jewish Role Models", "rwg": 0.606578947368421}, {"consensus": "Medium (.50\u2013.69)", "high": 85.0, "low": 10.0, "medium": 5.0, "name": "The Jewish People in its Diversity", "rwg": 0.58421052631579}, {"consensus": "Medium (.50\u2013.69)", "high": 75.0, "low": 10.0, "medium": 15.0, "name": "Jewish Friendship", "rwg": 0.584210526315789}, {"consensus": "Medium (.50\u2013.69)", "high": 45.0, "low": 25.0, "medium": 30.0, "name": "Jewish Culinary Traditions", "rwg": 0.564473684210526}];
-    const consensusLowData = [{"consensus": "Low (\u003c.50)", "high": 35.0, "low": 20.0, "medium": 45.0, "name": "Holiness of Nature and the Environment", "rwg": 0.478947368421053}, {"consensus": "Low (\u003c.50)", "high": 30.0, "low": 40.0, "medium": 30.0, "name": "Jewish Arts and Culture", "rwg": 0.478947368421053}, {"consensus": "Low (\u003c.50)", "high": 60.0, "low": 25.0, "medium": 15.0, "name": "Expression of God\u0027s Creation", "rwg": 0.4}, {"consensus": "Low (\u003c.50)", "high": 55.0, "low": 20.0, "medium": 25.0, "name": "Mitzvot and Customs", "rwg": 0.353947368421053}, {"consensus": "Low (\u003c.50)", "high": 55.0, "low": 15.0, "medium": 30.0, "name": "Jewish Texts, Torah, and Core Narratives", "rwg": 0.343421052631579}, {"consensus": "Low (\u003c.50)", "high": 73.7, "low": 15.8, "medium": 10.5, "name": "Justice and Tzedakah", "rwg": 0.230994152046784}, {"consensus": "Low (\u003c.50)", "high": 65.0, "low": 25.0, "medium": 10.0, "name": "Judaism\u0027s Relevance to Life\u0027s Questions", "rwg": 0.18421052631579}, {"consensus": "Low (\u003c.50)", "high": 50.0, "low": 30.0, "medium": 20.0, "name": "God, Spirituality, and Prayer", "rwg": 0.0381578947368419}];
+    const consensusHighData = [{"consensus": "High (\u2265.70)", "high": 78.6, "low": 7.1, "medium": 14.3, "name": "Jewish Community", "rwg": 0.703296703296703}];
+    const consensusMediumData = [{"consensus": "Medium (.50\u2013.69)", "high": 71.4, "low": 7.1, "medium": 21.4, "name": "Jewish History, Memory, and Tradition", "rwg": 0.678571428571429}, {"consensus": "Medium (.50\u2013.69)", "high": 50.0, "low": 7.1, "medium": 42.9, "name": "Israel and its People", "rwg": 0.637362637362637}, {"consensus": "Medium (.50\u2013.69)", "high": 85.7, "low": 7.1, "medium": 7.1, "name": "Rituals and Holidays", "rwg": 0.601648351648352}, {"consensus": "Medium (.50\u2013.69)", "high": 85.7, "low": 14.3, "medium": 0, "name": "The Jewish People in its Diversity", "rwg": 0.57967032967033}, {"consensus": "Medium (.50\u2013.69)", "high": 78.6, "low": 7.1, "medium": 14.3, "name": "Issues Facing Contemporary Jewry", "rwg": 0.57967032967033}, {"consensus": "Medium (.50\u2013.69)", "high": 50.0, "low": 21.4, "medium": 28.6, "name": "Jewish Role Models", "rwg": 0.568681318681319}, {"consensus": "Medium (.50\u2013.69)", "high": 57.1, "low": 14.3, "medium": 28.6, "name": "Jewish Culinary Traditions", "rwg": 0.568681318681319}, {"consensus": "Medium (.50\u2013.69)", "high": 85.7, "low": 14.3, "medium": 0, "name": "Hebrew and Jewish Terminology", "rwg": 0.538461538461538}];
+    const consensusLowData = [{"consensus": "Low (\u003c.50)", "high": 78.6, "low": 14.3, "medium": 7.1, "name": "Jewish Friendship", "rwg": 0.461538461538462}, {"consensus": "Low (\u003c.50)", "high": 21.4, "low": 50.0, "medium": 28.6, "name": "Jewish Arts and Culture", "rwg": 0.428571428571429}, {"consensus": "Low (\u003c.50)", "high": 57.1, "low": 21.4, "medium": 21.4, "name": "Expression of God\u0027s Creation", "rwg": 0.414835164835165}, {"consensus": "Low (\u003c.50)", "high": 35.7, "low": 28.6, "medium": 35.7, "name": "Holiness of Nature and the Environment", "rwg": 0.307692307692308}, {"consensus": "Low (\u003c.50)", "high": 50.0, "low": 28.6, "medium": 21.4, "name": "Mitzvot and Customs", "rwg": 0.241758241758242}, {"consensus": "Low (\u003c.50)", "high": 61.5, "low": 23.1, "medium": 15.4, "name": "Justice and Tzedakah", "rwg": 0.121794871794872}, {"consensus": "Low (\u003c.50)", "high": 57.1, "low": 21.4, "medium": 21.4, "name": "Jewish Texts, Torah, and Core Narratives", "rwg": 0.098901098901099}, {"consensus": "Low (\u003c.50)", "high": 57.1, "low": 35.7, "medium": 7.1, "name": "Judaism\u0027s Relevance to Life\u0027s Questions", "rwg": 0.0631868131868132}, {"consensus": "Low (\u003c.50)", "high": 42.9, "low": 28.6, "medium": 28.6, "name": "God, Spirituality, and Prayer", "rwg": -0.0769230769230769}];
 
     // Debug: Log data availability
     console.log('Consensus data loaded - High:', consensusHighData?.length || 0,
@@ -107,10 +107,10 @@
     <div class="content">
         <div class="summary-box">
             <strong>Key Findings:</strong> Board and staff demonstrate <strong>strong overall alignment</strong> across
-            dimensions. 1 dimensions show high consensus, and 9 more show moderate agreement. Only 8
+            dimensions. 1 dimensions show high consensus, and 8 more show moderate agreement. Only 9
             dimensions have weak consensus.
-            <strong>Jewish Community</strong> (rWG=0.71) shows the strongest alignment
-            , while <strong>God, Spirituality, and Prayer</strong> (rWG=0.04) has the weakest consensus.
+            <strong>Jewish Community</strong> (rWG=0.70) shows the strongest alignment
+            , while <strong>God, Spirituality, and Prayer</strong> (rWG=-0.08) has the weakest consensus.
             <div class="summary-stats">
                 <div class="stat-item">
                     <span
@@ -120,12 +120,12 @@
                 <div class="stat-item">
                     <span
                         style="width: 12px; height: 12px; background: #FCC40F; border-radius: 50%; display: inline-block;"></span>
-                    <span>9 Medium Consensus</span>
+                    <span>8 Medium Consensus</span>
                 </div>
                 <div class="stat-item">
                     <span
                         style="width: 12px; height: 12px; background: #D1223F; border-radius: 50%; display: inline-block;"></span>
-                    <span>8 Low Consensus</span>
+                    <span>9 Low Consensus</span>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                 <span class="consensus-dot" style="background: #FCC40F;"></span>
                 <span>Medium Consensus (rWG .50–.69)</span>
             </div>
-            <div class="chart-container" style="height: 485px;">
+            <div class="chart-container" style="height: 440px;">
                 <div class="chart-wrapper">
                     <canvas id="consensusChartMedium"></canvas>
                 </div>
@@ -182,7 +182,7 @@
                 <span class="consensus-dot" style="background: #D1223F;"></span>
                 <span>Low Consensus (rWG < .50)</span>
             </div>
-            <div class="chart-container" style="height: 440px;">
+            <div class="chart-container" style="height: 485px;">
                 <div class="chart-wrapper">
                     <canvas id="consensusChartLow"></canvas>
                 </div>
